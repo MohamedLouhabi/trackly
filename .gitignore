@@ -10,3 +10,7 @@ npm-debug.log*
 .DS_Store
 *.tsbuildinfo
 next-env.d.ts
+
+# Kept local, not published
+/supabase
+/trackly_visuel_identity

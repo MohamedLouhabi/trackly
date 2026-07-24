@@ -76,20 +76,11 @@ cp .env.local.example .env.local
 
 ### 3. Database
 
-Run the migrations in the Supabase SQL editor (or via `psql`), **in order**:
-
-```
-supabase/schema.sql                     auth: profiles, rate_limits, signup trigger
-supabase/002_saas_core.sql              orgs, members, projects, tasks, activity, subscriptions + RLS
-supabase/003_invitations.sql            invitations (hashed tokens)
-supabase/004_rate_limit_fn.sql          atomic rate-limit function
-supabase/005_app_shell.sql              role-gated deletes, co-member profile reads
-supabase/006_analytics.sql              completed_at trigger + analytics views
-supabase/007_fix_org_create_returning.sql  org-creation RETURNING visibility
-supabase/008_analytics_weekly_detail.sql   weekly priority split + median cycle time
-```
-
-In Supabase → Authentication, keep only the **Email** provider enabled, and set your Site URL / redirect URLs.
+The SQL migrations that build the schema (tables, row-level-security policies,
+the rate-limit function and the analytics views) are not published with this
+repository. Apply them in the Supabase SQL editor in order, then under
+Supabase → Authentication keep only the **Email** provider enabled and set your
+Site URL and redirect URLs.
 
 ### 4. Run
 
@@ -128,7 +119,6 @@ src/
 │   ├── billing.ts                  plans, limits, upgrade (the payment seam)
 │   ├── rate-limit.ts · validation.ts · activity.ts · http.ts
 └── middleware.ts                   route protection + session refresh
-supabase/                           SQL migrations (schema, RLS, views)
 ```
 
 ## Roadmap

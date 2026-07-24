@@ -120,8 +120,7 @@ src/
 │   ├── login/ · signup/ · forgot-password/ · reset-password/
 │   ├── onboarding/                 create org → invite team
 │   ├── dashboard/[orgId]/          app shell: projects, board, analytics
-│   ├── settings/billing/           plan & usage, simulated upgrade
-│   ├── account/                    change password, delete account
+│   ├── settings/                   workspace · members · billing · account
 │   └── api/                        auth + private API routes (Zod + session + RLS)
 ├── components/                     board, modals, charts, topbar, switcher
 ├── lib/

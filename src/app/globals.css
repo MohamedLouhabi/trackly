@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* The system shows no dark surfaces — the paper is the brand. */
+  color-scheme: light;
+
+  /* ---- Broadsheet design-system tokens (mirror the identity kit) ---- */
+  --color-bg: #f3f2f2;
+  --color-text: #201e1d;
+  --color-divider: #e3e1df;
+
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #e9e7e6;
+  --color-neutral-300: #d8d5d3;
+  --color-neutral-400: #b5b1ae;
+  --color-neutral-500: #928e8b;
+  --color-neutral-600: #6f6b68;
+  --color-neutral-700: #565350;
+  --color-neutral-800: #3d3b39;
+  --color-neutral-900: #2a2827;
+
+  --color-accent: #0088b0;
+  --color-accent-100: #e0f1f7;
+  --color-accent-200: #b8e0ed;
+  --color-accent-300: #85c8dd;
+  --color-accent-400: #4aabc9;
+  --color-accent-500: #0088b0;
+  --color-accent-600: #007598;
+  --color-accent-700: #005f7d;
+  --color-accent-800: #004a62;
+  --color-accent-900: #003647;
+
+  --color-accent-2: #d6006c;
+  --color-accent-2-100: #fbe3ef;
+  --color-accent-2-200: #f5bcd8;
+  --color-accent-2-400: #e05496;
+  --color-accent-2-700: #91004a;
+  --color-accent-2-800: #6e0039;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --shadow-sm: 0 1px 2px rgba(32, 30, 29, 0.06);
+  --shadow-md: 0 2px 8px rgba(32, 30, 29, 0.08), 0 8px 24px rgba(32, 30, 29, 0.06);
+  --shadow-lg: 0 8px 20px rgba(32, 30, 29, 0.12), 0 24px 60px rgba(32, 30, 29, 0.14);
+
+  --font-heading: var(--font-serif), Georgia, serif;
+  --font-heading-weight: 600;
+  --font-body: var(--font-serif), Georgia, serif;
+}
+
+body {
+  @apply bg-paper text-ink antialiased;
+  text-wrap: pretty;
+}
+
+/* Serif headings inherit the body serif; keep numerals tabular in data UI. */
+.tnum {
+  font-feature-settings: 'tnum' 1;
+}
+
+/* Logo lockup: block so it sits on no baseline, sized by its own attributes. */
+.brand-logo {
+  display: block;
+}

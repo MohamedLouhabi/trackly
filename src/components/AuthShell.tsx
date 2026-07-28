@@ -17,10 +17,10 @@ export function AuthShell({
 }) {
   return (
     <main className="grid min-h-screen place-items-center bg-paper px-4 py-10">
-      <div className="w-full max-w-sm">
+      <div className="w-full max-w-md">
         <p className="mb-6 flex justify-center">
           <a href="/" aria-label="Trackly" className="no-underline">
-            <Brandmark height={26} />
+            <Brandmark height={34} />
           </a>
         </p>
         <div className="rounded-xl bg-card p-8 shadow-card-md">

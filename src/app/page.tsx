@@ -68,7 +68,7 @@ export default function Home() {
     <div className="landing">
       <nav className="nav">
         <span className="nav-brand brandmark">
-          <Brandmark height={24} />
+          <Brandmark height={30} />
         </span>
         <span className="spacer" />
         <a href="#features">Features</a>
@@ -568,7 +568,7 @@ export default function Home() {
           <div className="sitemap">
             <div>
               <span className="brandmark">
-                <Brandmark height={24} />
+                <Brandmark height={28} />
               </span>
               <p style={{ fontSize: 13.5, maxWidth: '26ch', marginTop: 'var(--half)', color: 'color-mix(in srgb, var(--color-text) 70%, transparent)' }}>
                 Project tracking for teams who&apos;d rather be working.

@@ -60,6 +60,12 @@
   --font-body: var(--font-serif), Georgia, serif;
 }
 
+/* Root at 17px: the rem-based utility classes on the auth and account
+   screens scale with it, so the whole product reads one step larger. */
+html {
+  font-size: 106.25%;
+}
+
 body {
   @apply bg-paper text-ink antialiased;
   text-wrap: pretty;

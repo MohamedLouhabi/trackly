@@ -51,7 +51,7 @@ export function AppTopbar({
   return (
     <header className="topbar">
       <Link href="/dashboard" className="brandmark" aria-label="Trackly">
-        <Brandmark height={22} />
+        <Brandmark height={26} />
       </Link>
 
       <nav>

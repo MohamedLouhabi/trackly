@@ -34,7 +34,7 @@ export default async function SettingsLayout({ children }: { children: React.Rea
     <div className="app min-h-screen bg-paper">
       <header className="topbar">
         <Link href="/dashboard" className="brandmark" aria-label="Trackly">
-          <Brandmark height={22} />
+          <Brandmark height={26} />
         </Link>
         <nav>
           <Link href={orgId ? `/dashboard/${orgId}` : '/dashboard'}>Board</Link>

@@ -4,9 +4,9 @@
    collide with the marketing page (.landing) or anything else. */
 
 .app {
-  --leading: 28px;
-  --half: 14px;
-  --edge: clamp(16px, 3vw, 40px);
+  --leading: 30px;
+  --half: 15px;
+  --edge: clamp(16px, 2.5vw, 44px);
 }
 
 /* ---------- topbar ---------- */
@@ -16,7 +16,7 @@
   font-size: 20px; letter-spacing: -0.01em; text-decoration: none; color: var(--color-text); }
 .app .brandmark .tick { color: var(--color-accent); }
 .app .topbar nav { display: flex; gap: var(--space-4); margin-left: var(--space-4); }
-.app .topbar nav a { font-size: 14px; text-decoration: none;
+.app .topbar nav a { font-size: 15px; text-decoration: none;
   color: color-mix(in srgb, var(--color-text) 70%, transparent); padding: 4px 2px; }
 .app .topbar nav a:hover { color: var(--color-accent-700); }
 .app .topbar nav a[aria-current="page"] { color: var(--color-text); font-weight: 600;
@@ -24,8 +24,8 @@
 .app .topbar .spacer { flex: 1; }
 
 /* ---------- avatars ---------- */
-.app .avatar { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center;
-  font-size: 10px; font-weight: 600; border: 1.5px solid var(--color-bg); }
+.app .avatar { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center;
+  font-size: 11px; font-weight: 600; border: 1.5px solid var(--color-bg); }
 .app .av-a { background: var(--color-accent-200); color: var(--color-accent-800); }
 .app .av-b { background: var(--color-neutral-300); color: var(--color-neutral-800); }
 .app .av-c { background: var(--color-accent-2-200); color: var(--color-accent-2-800); }
@@ -34,17 +34,17 @@
 .app .avatars .avatar + .avatar { margin-left: -6px; }
 
 /* ---------- page frame ---------- */
-.app .main { max-width: 1200px; margin: 0 auto;
+.app .main { max-width: 1440px; margin: 0 auto;
   padding: var(--leading) var(--edge) calc(2 * var(--leading)); }
 .app .page-head { display: flex; align-items: baseline; gap: var(--space-3); flex-wrap: wrap;
   margin-bottom: var(--leading); }
 .app .page-title { font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 30px; letter-spacing: -0.015em; margin: 0; }
-.app .page-meta { font-size: 13px; color: color-mix(in srgb, var(--color-text) 55%, transparent); }
+  font-size: 34px; letter-spacing: -0.015em; margin: 0; }
+.app .page-meta { font-size: 14px; color: color-mix(in srgb, var(--color-text) 55%, transparent); }
 
 /* ---------- buttons ---------- */
 .app .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
-  border-radius: var(--radius-md); padding: 9px 18px; font-size: 14px; font-weight: 600;
+  border-radius: var(--radius-md); padding: 10px 20px; font-size: 15px; font-weight: 600;
   font-family: var(--font-body); text-decoration: none; cursor: pointer; border: 0;
   transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease; }
 .app .btn:hover { transform: translateY(-1px); }
@@ -68,19 +68,19 @@
 
 /* ---------- kanban grammar ---------- */
 .app .filters { display: flex; gap: var(--space-2); align-items: center; margin-left: auto; flex-wrap: wrap; }
-.app .chip { font-size: 12px; padding: 4px 12px; border-radius: 999px; border: 0; cursor: pointer;
+.app .chip { font-size: 13px; padding: 5px 14px; border-radius: 999px; border: 0; cursor: pointer;
   background: var(--color-neutral-200); color: var(--color-neutral-800); font-family: var(--font-body);
   transition: background 120ms ease; display: inline-flex; align-items: center; gap: 5px; }
 .app .chip:hover { background: var(--color-neutral-300); }
 .app .chip.on { background: var(--color-accent-200); color: var(--color-accent-800); }
 .app .board { display: grid; grid-template-columns: repeat(3, minmax(230px, 1fr));
   gap: var(--space-4); align-items: start; }
-.app .lane-name { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+.app .lane-name { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--color-neutral-600); margin: 0 0 var(--space-2);
   display: flex; align-items: center; gap: 7px; }
 .app .lane-count { font-feature-settings: "tnum" 1; color: var(--color-neutral-500); }
 .app .lane { display: flex; flex-direction: column; gap: var(--space-2); min-height: 200px; }
-.app .lane .add { border: 0; background: none; font-family: var(--font-body); font-size: 12.5px;
+.app .lane .add { border: 0; background: none; font-family: var(--font-body); font-size: 13.5px;
   color: var(--color-neutral-500); text-align: left; padding: var(--space-2) var(--space-3);
   border-radius: var(--radius-md); cursor: pointer; transition: background 120ms ease, color 120ms ease; }
 .app .lane .add:hover { background: var(--color-neutral-200); color: var(--color-neutral-800); }
@@ -88,7 +88,7 @@
   height: 58px; background: var(--color-accent-100); }
 .app .kcard { background: var(--color-neutral-100); border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm); padding: var(--space-2) var(--space-3);
-  border-left: 3px solid var(--color-neutral-300); font-size: 13.5px;
+  border-left: 3px solid var(--color-neutral-300); font-size: 14.5px;
   transition: box-shadow 160ms ease, transform 160ms ease; cursor: grab; }
 .app .kcard:hover { box-shadow: var(--shadow-md); }
 .app .kcard.p-high { border-left-color: var(--color-accent-2); }
@@ -96,14 +96,14 @@
 .app .kcard .kt { font-weight: 600; margin: 0; line-height: 1.4; }
 .app .kcard .krow { display: flex; align-items: center; justify-content: space-between;
   margin-top: var(--space-1); }
-.app .kcard .kid { font-size: 10.5px; color: var(--color-neutral-500); font-feature-settings: "tnum" 1; }
+.app .kcard .kid { font-size: 11.5px; color: var(--color-neutral-500); font-feature-settings: "tnum" 1; }
 .app .kcard.drag { box-shadow: var(--shadow-lg); transform: rotate(2deg) translateY(-3px); cursor: grabbing; }
 .app .kcard .avatar { width: 20px; height: 20px; font-size: 8px; border-color: var(--color-neutral-100); }
 .app .kcard .kdel { border: 0; background: none; cursor: pointer; font-size: 12px; line-height: 1;
   color: var(--color-neutral-300); opacity: 0; transition: opacity 120ms ease, color 120ms ease; }
 .app .kcard:hover .kdel { opacity: 1; }
 .app .kcard .kdel:hover { color: var(--color-accent-2); }
-.app .tagline { display: inline-flex; align-items: center; gap: 5px; font-size: 10.5px;
+.app .tagline { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px;
   color: var(--color-neutral-600); margin-top: 6px; }
 .app .tagline.hot { color: var(--color-accent-2-700); }
 
@@ -112,11 +112,11 @@
 .app .stat { background: var(--color-neutral-100); border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm); padding: var(--space-4); transition: box-shadow 200ms ease; }
 .app .stat:hover { box-shadow: var(--shadow-md); }
-.app .stat .s-label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+.app .stat .s-label { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--color-neutral-600); }
 .app .stat .s-num { font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 34px; line-height: 1.1; font-feature-settings: "pnum" 1; margin-top: 6px; }
-.app .stat .s-delta { font-size: 12px; margin-top: 4px; color: var(--color-neutral-600);
+  font-size: 40px; line-height: 1.1; font-feature-settings: "pnum" 1; margin-top: 6px; }
+.app .stat .s-delta { font-size: 13px; margin-top: 4px; color: var(--color-neutral-600);
   display: flex; align-items: center; gap: 5px; }
 .app .stat .s-delta.good { color: var(--color-accent-700); }
 .app .stat .s-delta.bad { color: var(--color-accent-2-700); }
@@ -130,9 +130,9 @@
   box-shadow: var(--shadow-sm); padding: var(--space-6); transition: box-shadow 200ms ease; }
 .app .chart:hover { box-shadow: var(--shadow-md); }
 .app .chart.full { grid-column: 1 / -1; }
-.app .chart h2 { font-size: 18px; margin: 0 0 4px; }
-.app .chart .c-sub { font-size: 12.5px; color: var(--color-neutral-600); margin: 0 0 var(--space-4); }
-.app .legend { display: flex; gap: var(--space-4); font-size: 12px; color: var(--color-neutral-700);
+.app .chart h2 { font-size: 20px; margin: 0 0 4px; }
+.app .chart .c-sub { font-size: 13.5px; color: var(--color-neutral-600); margin: 0 0 var(--space-4); }
+.app .legend { display: flex; gap: var(--space-4); font-size: 13px; color: var(--color-neutral-700);
   margin-top: var(--space-3); }
 .app .legend span { display: inline-flex; align-items: center; gap: 6px; }
 .app .legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
@@ -146,9 +146,9 @@
   transition: box-shadow 200ms ease, transform 160ms ease; }
 .app .proj-card:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
 .app .proj-card .p-title { font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 18px; margin: 0; }
-.app .proj-card .p-desc { font-size: 13px; line-height: 20px; color: var(--color-neutral-600); margin: 6px 0 0; }
-.app .empty { font-size: 15.5px; line-height: var(--leading); color: var(--color-neutral-600); max-width: 52ch; }
+  font-size: 20px; margin: 0; }
+.app .proj-card .p-desc { font-size: 14px; line-height: 22px; color: var(--color-neutral-600); margin: 6px 0 0; }
+.app .empty { font-size: 16.5px; line-height: var(--leading); color: var(--color-neutral-600); max-width: 52ch; }
 
 /* board + activity rail split */
 .app .board-with-rail { display: grid; grid-template-columns: minmax(0, 1fr) 300px;
@@ -161,10 +161,10 @@
 /* ---------- activity rail ---------- */
 .app .rail { background: var(--color-neutral-100); border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm); padding: var(--space-4); }
-.app .rail h3 { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+.app .rail h3 { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--color-neutral-600); margin: 0 0 var(--space-3); font-family: var(--font-body); font-weight: 600; }
 .app .rail ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); }
-.app .rail li { font-size: 13.5px; line-height: 19px; }
+.app .rail li { font-size: 14.5px; line-height: 21px; }
 .app .rail .who { font-weight: 600; }
 .app .rail .when { font-size: 11px; color: var(--color-neutral-400); font-feature-settings: "tnum" 1; }
 
@@ -172,7 +172,7 @@
 .app .settings { display: grid; grid-template-columns: 200px minmax(0, 1fr);
   gap: var(--space-8); align-items: start; }
 .app .snav { display: flex; flex-direction: column; gap: 2px; position: sticky; top: var(--space-4); }
-.app .snav a { font-size: 14px; text-decoration: none;
+.app .snav a { font-size: 15px; text-decoration: none;
   color: color-mix(in srgb, var(--color-text) 70%, transparent);
   padding: 7px 12px; border-radius: var(--radius-md); display: flex; align-items: center; gap: 9px;
   transition: background 120ms ease, color 120ms ease; }
@@ -183,44 +183,44 @@
   border-top: 3px solid var(--color-divider); box-shadow: var(--shadow-sm); padding: var(--space-6); }
 .app .plan-card.pro { border-top-color: var(--color-accent); box-shadow: var(--shadow-md); }
 .app .plan-card .row { display: flex; align-items: baseline; gap: var(--space-3); flex-wrap: wrap; }
-.app .plan-card h2 { font-size: 24px; margin: 0; font-family: var(--font-heading);
+.app .plan-card h2 { font-size: 26px; margin: 0; font-family: var(--font-heading);
   font-weight: var(--font-heading-weight); }
 .app .plan-card .price { margin-left: auto; font-family: var(--font-heading);
-  font-weight: var(--font-heading-weight); font-size: 24px; font-feature-settings: "pnum" 1; }
+  font-weight: var(--font-heading-weight); font-size: 26px; font-feature-settings: "pnum" 1; }
 .app .plan-card .price small { font-size: 13px; font-weight: 400; font-family: var(--font-body);
   color: var(--color-neutral-600); }
 .app .seats { margin-top: var(--space-4); }
-.app .seats .s-row { display: flex; justify-content: space-between; font-size: 13px;
+.app .seats .s-row { display: flex; justify-content: space-between; font-size: 14px;
   color: var(--color-neutral-700); margin-bottom: 6px; font-feature-settings: "tnum" 1; }
 .app .meter { height: 6px; border-radius: 999px; background: var(--color-neutral-200); overflow: hidden; }
 .app .meter i { display: block; height: 100%; background: var(--color-accent); border-radius: 999px; }
 .app .meter i.full { background: var(--color-accent-2); }
 .app .plan-card .actions { display: flex; gap: var(--space-3); margin-top: var(--space-6);
   align-items: center; flex-wrap: wrap; }
-.app .plan-card .fine { font-size: 12.5px; color: var(--color-neutral-600); }
-.app .paid { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px;
+.app .plan-card .fine { font-size: 13.5px; color: var(--color-neutral-600); }
+.app .paid { display: inline-flex; align-items: center; gap: 5px; font-size: 12.5px;
   color: var(--color-accent-800); background: var(--color-accent-100); padding: 2px 9px; border-radius: 999px; }
 .app .paid.free { color: var(--color-neutral-800); background: var(--color-neutral-200); }
-.app .block h3 { font-size: 17px; margin: 0 0 var(--space-1); font-family: var(--font-heading);
+.app .block h3 { font-size: 18.5px; margin: 0 0 var(--space-1); font-family: var(--font-heading);
   font-weight: var(--font-heading-weight); }
-.app .block .b-sub { font-size: 13px; color: var(--color-neutral-600); margin: 0 0 var(--space-3); }
-.app .payrow { display: flex; align-items: center; gap: var(--space-3); font-size: 14px;
+.app .block .b-sub { font-size: 14px; color: var(--color-neutral-600); margin: 0 0 var(--space-3); }
+.app .payrow { display: flex; align-items: center; gap: var(--space-3); font-size: 15px;
   padding: var(--space-3) 0; border-top: 1px solid var(--color-divider);
   border-bottom: 1px solid var(--color-divider); flex-wrap: wrap; }
 .app .payrow .muted { color: var(--color-neutral-600); font-size: 13px; }
 .app .payrow .btn { margin-left: auto; }
-.app .invoices { width: 100%; border-collapse: collapse; font-size: 13.5px;
+.app .invoices { width: 100%; border-collapse: collapse; font-size: 14.5px;
   font-feature-settings: "tnum" 1; }
-.app .invoices th { text-align: left; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+.app .invoices th { text-align: left; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--color-neutral-600); font-weight: 600; padding: 8px 12px 8px 0;
   border-bottom: 1px solid var(--color-divider); }
 .app .invoices td { padding: 10px 12px 10px 0; border-bottom: 1px solid var(--color-divider); }
 .app .invoices tr:last-child td { border-bottom: 0; }
 .app .mlist { border-top: 1px solid var(--color-divider); }
-.app .mrow { display: flex; align-items: center; gap: var(--space-3); font-size: 14px;
+.app .mrow { display: flex; align-items: center; gap: var(--space-3); font-size: 15px;
   padding: var(--space-3) 0; border-bottom: 1px solid var(--color-divider); }
 .app .mrow .mname { font-weight: 600; }
-.app .mrow .mrole { margin-left: auto; font-size: 12px; color: var(--color-neutral-600);
+.app .mrow .mrole { margin-left: auto; font-size: 13px; color: var(--color-neutral-600);
   text-align: right; }
 .app .mrow.pending { color: var(--color-neutral-600); }
 .app .mrow.pending .mname { font-weight: 400; }
@@ -233,9 +233,9 @@
 .app .plan-card.danger { border-top-color: var(--color-accent-2); }
 
 /* ---------- forms (modals / settings inputs) ---------- */
-.app .field-label { display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+.app .field-label { display: block; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--color-neutral-600); margin-bottom: 4px; }
-.app .input { width: 100%; font-family: var(--font-body); font-size: 14px;
+.app .input { width: 100%; font-family: var(--font-body); font-size: 15px;
   padding: 9px 12px; border-radius: var(--radius-md); background: var(--color-neutral-100);
   border: 1px solid var(--color-divider); color: var(--color-text); outline: none;
   transition: border-color 120ms ease, box-shadow 120ms ease; }
@@ -245,9 +245,9 @@
 .app .modal { width: 100%; max-width: 440px; background: var(--color-neutral-100);
   border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); padding: var(--space-6); }
 .app .modal h2 { font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 22px; margin: 0 0 var(--space-4); }
-.app .err { font-size: 13px; color: var(--color-accent-2-700); margin: 0; }
-.app .ok { font-size: 13px; color: var(--color-accent-700); margin: 0; }
+  font-size: 24px; margin: 0 0 var(--space-4); }
+.app .err { font-size: 14px; color: var(--color-accent-2-700); margin: 0; }
+.app .ok { font-size: 14px; color: var(--color-accent-700); margin: 0; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 1000px) { .app .charts { grid-template-columns: 1fr; } }
